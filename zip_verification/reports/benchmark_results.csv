@@ -1,0 +1,5 @@
+benchmark,iterations,total_time_ms,throughput_ops_per_second,min_latency_ms,mean_latency_ms,p50_latency_ms,p95_latency_ms,p99_latency_ms,max_latency_ms
+cache_warm_read,1000,1.0498,952562.39,0.0009,0.00105,0.001,0.0011,0.0021,0.0054
+cache_write,1000,1.7498,571493.89,0.0016,0.00175,0.0017,0.0018,0.0026,0.0227
+partition_rebalance_1000,20,122.5054,163.26,5.8409,6.12527,5.9452,6.6559,7.3202,7.3202
+event_processing,1000,6.7217,148771.89,0.0061,0.006722,0.0063,0.0078,0.0155,0.044

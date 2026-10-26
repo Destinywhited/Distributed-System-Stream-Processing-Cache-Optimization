@@ -1,0 +1,3 @@
+{"attempts": 1, "error": null, "event_id": "eval-001", "status": "processed"}
+{"attempts": 0, "error": null, "event_id": "eval-001", "status": "duplicate"}
+{"attempts": 0, "error": "event_id must be a non-empty string", "event_id": null, "status": "invalid"}

@@ -1,0 +1,80 @@
+{
+  "project": "Distributed System Stream Processing & Cache Optimization",
+  "generated_at_utc": "2026-10-26T06:07:01.266909+00:00",
+  "environment": {
+    "python_version": "3.12.7",
+    "platform": "win32",
+    "iterations_per_standard_benchmark": 1000
+  },
+  "results": [
+    {
+      "benchmark": "cache_warm_read",
+      "metrics": {
+        "iterations": 1000,
+        "total_time_ms": 1.0498,
+        "throughput_ops_per_second": 952562.39,
+        "latency_ms": {
+          "min": 0.0009,
+          "mean": 0.00105,
+          "p50": 0.001,
+          "p95": 0.0011,
+          "p99": 0.0021,
+          "max": 0.0054
+        }
+      }
+    },
+    {
+      "benchmark": "cache_write",
+      "metrics": {
+        "iterations": 1000,
+        "total_time_ms": 1.7498,
+        "throughput_ops_per_second": 571493.89,
+        "latency_ms": {
+          "min": 0.0016,
+          "mean": 0.00175,
+          "p50": 0.0017,
+          "p95": 0.0018,
+          "p99": 0.0026,
+          "max": 0.0227
+        }
+      }
+    },
+    {
+      "benchmark": "partition_rebalance_1000",
+      "metrics": {
+        "iterations": 20,
+        "total_time_ms": 122.5054,
+        "throughput_ops_per_second": 163.26,
+        "latency_ms": {
+          "min": 5.8409,
+          "mean": 6.12527,
+          "p50": 5.9452,
+          "p95": 6.6559,
+          "p99": 7.3202,
+          "max": 7.3202
+        }
+      }
+    },
+    {
+      "benchmark": "event_processing",
+      "metrics": {
+        "iterations": 1000,
+        "total_time_ms": 6.7217,
+        "throughput_ops_per_second": 148771.89,
+        "latency_ms": {
+          "min": 0.0061,
+          "mean": 0.006722,
+          "p50": 0.0063,
+          "p95": 0.0078,
+          "p99": 0.0155,
+          "max": 0.044
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Measurements describe this local run and machine only.",
+    "The cache benchmark uses in-memory storage, not a Redis server.",
+    "These microbenchmarks do not establish production SLA compliance."
+  ]
+}
